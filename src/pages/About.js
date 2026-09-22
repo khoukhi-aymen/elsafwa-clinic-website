@@ -1,72 +1,74 @@
-import { Component } from "react";
+import React, { Component } from "react";
+import { withTranslation } from "react-i18next";
+import "../About.css";
 
 class About extends Component {
-  render() {
-    return (
-      <section className="about-section">
-        <br />
-        <br />
-        <div className="container">
-          {/* Titre */}
-          <h2 className="about-title">À propos de nous</h2>
-          <p className="about-subtitle">
-            Bienvenue chez <strong>TIGANA Trade</strong>
-          </p>
+    render() {
+        const { t } = this.props;
+        return (
+            <div className="nx-about-page">
 
-          {/* Présentation */}
-          <div className="about-content">
-            <div className="about-text">
-              <h3>Qui sommes-nous ?</h3>
-              <p>
-                TIGANA INTERNATIONAL TRADING est une entreprise spécialisée dans l’exportation de produits algériens vers les marchés internationaux. 
-                Notre mission est de promouvoir la qualité, l’authenticité et la richesse des produits fabriqués en Algérie, tout en offrant des solutions commerciales fiables, rapides et adaptées aux besoins de nos partenaires à l’étranger.
-              </p>
+                {/* Bannière de titre */}
+                <section className="nx-about-hero">
+                    <p className="nx-about-hero-eyebrow">{t("about_page.hero_eyebrow")}</p>
+                    <h1>EURL Nexova Trade</h1>
+                    <p className="nx-about-hero-text">
+                        {t("about_page.hero_text")}
+                    </p>
+                </section>
 
-              <h3>Nos services & produits</h3>
-              <p>
-                Nous assurons un accompagnement complet allant de la sélection des produits, au contrôle de qualité, jusqu’à la gestion logistique et l’expédition. 
-                Grâce à notre réseau professionnel solide et à notre expertise confirmée dans le commerce international, nous garantissons un service transparent, efficace et centré sur la satisfaction de nos clients.
-              </p>
+                {/* Présentation */}
+                <section className="nx-about-intro">
+                    <div className="nx-about-intro-text">
+                        <h2>{t("about_page.intro_heading")}</h2>
+                        <p>{t("about_page.intro_text1")}</p>
+                        <p>{t("about_page.intro_text2")}</p>
+                    </div>
+                    <div className="nx-about-intro-img">
+                        <img src="/images/NEXOVA-about.jpg" alt="Équipe Nexova Trade" />
+                    </div>
+                </section>
 
-              <ul>
-                <li>✔ Dattes</li>
-                <li>✔ Huile d’Olive</li>
-                <li>✔ Produits agricoles</li>
-                <li>✔ Produits agroalimentaires</li>
-                <li>✔ Produits d’emballage</li>
-                <li>✔ Produits de construction</li>
-              </ul>
+                {/* Vision / Mission / Valeurs */}
+                <section className="nx-about-pillars">
+                    <div className="nx-pillar">
+                        <span className="nx-pillar-icon">◎</span>
+                        <h3>{t("home.about.vision_title")}</h3>
+                        <p>{t("home.about.vision_text")}</p>
+                    </div>
 
-              <h3>Notre mission & valeurs</h3>
-              <ul>
-                <li>✔ Qualité et authenticité des produits</li>
-                <li>✔ Service fiable et rapide</li>
-                <li>✔ Satisfaction client</li>
-                <li>✔ Innovation et amélioration continue</li>
-              </ul>
+                    <div className="nx-pillar">
+                        <span className="nx-pillar-icon">⚙</span>
+                        <h3>{t("home.about.mission_title")}</h3>
+                        <p>{t("home.about.mission_text")}</p>
+                    </div>
+
+                    <div className="nx-pillar">
+                        <span className="nx-pillar-icon">♦</span>
+                        <h3>{t("home.about.values_title")}</h3>
+                        <p>{t("home.about.values_text")}</p>
+                    </div>
+                </section>
+
+                {/* Chiffres clés */}
+                <section className="nx-about-stats">
+                    <div className="nx-about-stat">
+                        <strong>{t("home.stats.clients_value")}</strong>
+                        <p>{t("home.stats.clients_label")}</p>
+                    </div>
+                    <div className="nx-about-stat">
+                        <strong>{t("home.stats.countries_value")}</strong>
+                        <p>{t("home.stats.countries_label")}</p>
+                    </div>
+                    <div className="nx-about-stat">
+                        <strong>{t("home.stats.shipments_value")}</strong>
+                        <p>{t("home.stats.shipments_label")}</p>
+                    </div>
+                </section>
+
             </div>
-
-            {/* Carte / GPS Map */}
-            <div className="about-map">
-              <iframe
-                title="TIGANA Trade Location"
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3203.818608450334!2d3.574746384716215!3d36.58258877999396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDM0JzU3LjMiTiAzwrAzNCcyMS4yIkU!5e0!3m2!1sar!2sdz!4v1765556839487!5m2!1sar!2sdz"
-                style={{
-                  border: 0,
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "15px",
-                }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
+        );
+    }
 }
 
-export default About;
+export default withTranslation()(About);

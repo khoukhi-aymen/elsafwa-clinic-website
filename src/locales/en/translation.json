@@ -1,0 +1,354 @@
+{
+  "services_page": {
+    "hero_eyebrow": "Our services",
+    "hero_title": "Full support, from sourcing to delivery",
+    "hero_text": "At EURL Nexova Trade, we handle every step of your export project so you can count on peace of mind, compliance and speed.",
+    "hero_cta_primary": "Discuss my project",
+    "hero_cta_secondary": "See our products",
+
+    "approach_heading": "Our approach",
+    "approach_text1": "From product selection to delivery at your door, EURL Nexova Trade acts as a single partner: one point of contact, full visibility at every step, and clear commitments on timelines and quality.",
+    "approach_text2": "We work with rigorously selected producers in Algeria and tailor every service to the size and requirements of your market.",
+
+    "services_heading": "What we do for you",
+    "sourcing_title": "Sourcing & product selection",
+    "sourcing_text": "We identify and select the best local producers and suppliers, based on your quality and volume requirements.",
+    "sourcing_point1": "Audit and selection of partner producers",
+    "sourcing_point2": "Sampling before order confirmation",
+
+    "quality_title": "Quality control",
+    "quality_text": "Every batch is inspected and tested before shipment to ensure compliance with international standards.",
+    "quality_point1": "Visual, physico-chemical and microbiological inspection depending on the product",
+    "quality_point2": "Control reports shared before shipment",
+
+    "logistics_title": "International logistics & transport",
+    "logistics_text": "We organize sea, air and land transport, with tracking all the way to destination.",
+    "logistics_point1": "Choosing the transport mode best suited to your product",
+    "logistics_point2": "Shipment tracking and alerts in case of the unexpected",
+
+    "customs_title": "Customs formalities & documentation",
+    "customs_text": "We handle all export documents, certificates and customs procedures on your behalf.",
+    "customs_point1": "Preparation of origin, sanitary and phytosanitary certificates",
+    "customs_point2": "Coordination with freight forwarders and export customs",
+
+    "partnership_title": "Support & business matchmaking",
+    "partnership_text": "We facilitate exchanges between producers and international buyers, with full transparency.",
+    "partnership_point1": "Direct matchmaking between producer and buyer",
+    "partnership_point2": "Negotiating commercial terms in your interest",
+
+    "support_title": "After-sales support",
+    "support_text": "Our team stays available after delivery to answer any question or additional need.",
+    "support_point1": "Dedicated point of contact after delivery",
+    "support_point2": "Satisfaction follow-up and claims handling",
+
+    "why_heading": "Why work with us",
+    "why1_title": "A single point of contact",
+    "why1_text": "You follow your project with one contact, from the first exchange to final delivery.",
+    "why2_title": "A network of vetted producers",
+    "why2_text": "We only work with audited partners able to meet their volume and quality commitments.",
+    "why3_title": "Full transparency",
+    "why3_text": "You receive regular updates on production and shipping progress.",
+    "why4_title": "Flexibility that fits your needs",
+    "why4_text": "Small or large quantities, one-off or recurring orders: we adapt our support to your needs.",
+
+    "sectors_heading": "Sectors we support",
+    "sectors_text": "Our services adapt to each of our product families.",
+
+    "process_heading": "How we work",
+    "step1_title": "Get in touch",
+    "step1_text": "You share your needs, and we explore the possibilities together.",
+    "step2_title": "Sourcing & offer",
+    "step2_text": "We identify the best products and send you a detailed offer.",
+    "step3_title": "Production & control",
+    "step3_text": "We monitor production and carry out the necessary quality checks.",
+    "step4_title": "Shipping & delivery",
+    "step4_text": "We organize transport and support you through to receipt.",
+
+    "faq_heading": "Frequently asked questions",
+    "faq1_q": "What is the minimum order volume you accept?",
+    "faq1_a": "It depends on the product; we review every request, from small trial batches to full container loads.",
+    "faq2_q": "How long does a first shipment take?",
+    "faq2_a": "Generally between 3 and 8 weeks, depending on the product, availability and the transport mode chosen.",
+    "faq3_q": "Do you handle customs formalities on both sides?",
+    "faq3_a": "We manage all export procedures in Algeria; on arrival, we guide you according to your country's requirements.",
+    "faq4_q": "Can I request samples before ordering?",
+    "faq4_a": "Yes, sending samples is part of our standard validation process before ordering.",
+
+    "cta_title": "Have an export project in mind?",
+    "cta_text": "Let's talk. Our team replies within 24 business hours.",
+    "cta_button": "Contact us"
+  },
+  "about_page": {
+    "hero_eyebrow": "About us",
+    "hero_text": "An Algerian company specialized in export, committed to promoting quality local products in international markets.",
+    "intro_heading": "Who we are",
+    "intro_text1": "EURL Nexova Trade connects markets and promotes Algerian know-how internationally. Since our founding, we have supported producers and foreign partners in building lasting, reliable and mutually beneficial trade relationships.",
+    "intro_text2": "Our team combines in-depth knowledge of the local market with a strong grasp of international market requirements, allowing us to offer products that meet the strictest standards."
+  },
+  "footer": {
+    "brand_title": "Nexova Trade",
+    "brand_text": "EURL Nexova Trade connects markets and promotes quality Algerian products internationally.",
+    "nav_heading": "Navigation",
+    "products_heading": "Our products",
+    "contact_heading": "Contact",
+    "address": "Algiers, Algeria",
+    "rights": "All rights reserved.",
+    "social_facebook": "Facebook",
+    "social_instagram": "Instagram",
+    "social_tiktok": "TikTok",
+    "social_linkedin": "LinkedIn",
+    "social_email": "Email"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About us",
+    "products": "Our products",
+    "agricole": "Agricultural products",
+    "huiles": "Oils and derivatives",
+    "terroir": "Local specialty products",
+    "matieres": "Raw materials",
+    "manufactures": "Manufactured goods",
+    "services": "Our services",
+    "toggle": "Toggle navigation"
+  },
+  "home": {
+    "hero": {
+      "eyebrow_line1": "Local products",
+      "eyebrow_line2": "for markets without borders",
+      "title_line1": "Export,",
+      "title_line2": "a world of opportunities",
+      "text": "EURL Nexova Trade connects markets and promotes quality products internationally. Together, let's build lasting partnerships and shared growth.",
+      "cta_products": "Discover our products",
+      "cta_contact": "Contact us",
+      "badge_label": "Global markets",
+      "badge_value": "Stronger together",
+      "caption_line1": "Opportunities",
+      "caption_line2": "beyond borders"
+    },
+    "features": {
+      "reliability_title": "Guaranteed reliability",
+      "reliability_text": "Products compliant with international standards",
+      "quality_title": "Certified quality",
+      "quality_text": "A rigorous selection for demanding markets",
+      "presence_title": "International presence",
+      "presence_text": "Partners in several countries",
+      "logistics_title": "Controlled logistics",
+      "logistics_text": "Secure and efficient delivery",
+      "partner_title": "A lasting partner",
+      "partner_text": "Support at every step"
+    },
+    "products": {
+      "heading": "Our main products",
+      "see_all": "See all products →",
+      "agricole_title": "Agricultural products",
+      "agricole_text": "Dates, fruits, vegetables...",
+      "huiles_title": "Oils and derivatives",
+      "huiles_text": "Olive oil, vegetable oils...",
+      "terroir_title": "Local specialty products",
+      "terroir_text": "Spices, herbs, natural products...",
+      "matieres_title": "Raw materials",
+      "matieres_text": "Minerals, salts, resources...",
+      "manufactures_title": "Manufactured goods",
+      "manufactures_text": "Industrial goods and products..."
+    },
+    "stats": {
+      "clients_value": "+100",
+      "clients_label": "Satisfied clients",
+      "countries_value": "+15",
+      "countries_label": "Partner countries",
+      "shipments_value": "+500",
+      "shipments_label": "Shipments completed",
+      "network_value": "A network",
+      "network_label": "worldwide",
+      "caption_line1": "Algerian products",
+      "caption_line2": "for the world"
+    },
+    "about": {
+      "eyebrow": "About us",
+      "title": "EURL Nexova Trade",
+      "text": "EURL Nexova Trade is a company specialized in export, committed to promoting quality Algerian products in international markets. Our mission is to enhance local know-how and create lasting opportunities through solid partnerships.",
+      "vision_title": "Our vision",
+      "vision_text": "To become a reference in the export field by creating lasting value for our partners.",
+      "mission_title": "Our mission",
+      "mission_text": "Facilitate access to international markets through quality products and reliable service.",
+      "values_title": "Our values",
+      "values_text": "Integrity, quality, commitment and lasting partnership.",
+      "cta_more": "Learn more →",
+      "map_caption_line1": "Algeria",
+      "map_caption_line2": "to the world"
+    },
+    "contact": {
+      "title": "Contact us",
+      "first_name_placeholder": "First name",
+      "last_name_placeholder": "Last name",
+      "message_placeholder": "Your message here.....",
+      "submit": "Send",
+      "modal_title": "Information",
+      "modal_text": "This service is not yet available",
+      "modal_ok": "OK"
+    }
+  },
+  "products": {
+    "agricole": {
+      "hero_title": "Agricultural Products",
+      "hero_text": "Export of fresh or processed agricultural products.",
+      "cta_contact": "Contact us",
+      "about_title": "About our products",
+      "about_subtitle": "EURL Nexova Trade offers fresh, quality agricultural products, grown and processed in Algeria.",
+      "card1_title": "Origin",
+      "card1_text": "Our products come from the best farms and agricultural regions in Algeria.",
+      "card2_title": "Quality",
+      "card2_text": "Each product is selected for its freshness and exceptional flavor.",
+      "card3_title": "Organic & Natural",
+      "card3_text": "Products grown naturally, without pesticides or chemical additives.",
+      "card4_title": "Processing",
+      "card4_text": "Products processed and packaged according to international standards.",
+      "card5_title": "Packaging",
+      "card5_text": "Carefully packaged to preserve freshness and quality.",
+      "card6_title": "Export & Logistics",
+      "card6_text": "Secure, tracked transport to guarantee products arrive in perfect condition.",
+      "gallery_title": "Product gallery",
+      "gallery_subtitle": "Discover our agricultural products."
+    },
+
+    "huile": {
+      "hero_title": "Oils and Derivatives",
+      "hero_text": "Discover our range of oils and derived products, carefully developed to meet quality requirements and the needs of our customers.",
+
+      "about_title": "Our Oils and Derivatives Activity",
+      "about_subtitle": "We develop a range of products derived from the processing and valorization of raw materials, with particular attention to quality, traceability and packaging.",
+
+      "card1_title": "Product Quality",
+      "card1_text": "We pay particular attention to the quality of our oils and derived products at every stage of their preparation.",
+
+      "card2_title": "Careful Selection",
+      "card2_text": "Our raw materials are carefully selected to ensure products that meet our quality requirements.",
+
+      "card3_title": "Control and Traceability",
+      "card3_text": "We ensure rigorous monitoring of the different stages to guarantee product conformity and traceability.",
+
+      "card4_title": "Packaging",
+      "card4_text": "Our products are carefully packaged to preserve their quality and facilitate storage, transportation and use.",
+
+      "card5_title": "Product Range",
+      "card5_text": "A diverse range of oil-based and derived products adapted to the different needs of our customers.",
+
+      "card6_title": "Distribution",
+      "card6_text": "We ensure the availability and distribution of our products to our various partners and customers.",
+
+      "gallery_title": "Gallery",
+      "gallery_subtitle": "Discover our oils and derivatives activity through images."
+    },
+    "matiere_premiere": {
+      "hero_title": "Raw Materials",
+
+      "hero_text": "Discover our range of carefully selected raw materials designed to meet the needs of our partners and ensure high-quality products.",
+
+      "about_title": "Our Raw Materials Activity",
+
+      "about_subtitle": "We ensure the selection, valorization and availability of raw materials adapted to our customers' needs, with particular attention to quality and traceability.",
+
+      "card1_title": "Raw Material Quality",
+
+      "card1_text": "We pay particular attention to the quality of our raw materials in order to meet our customers' requirements.",
+
+      "card2_title": "Careful Selection",
+
+      "card2_text": "Our raw materials are carefully selected according to quality and compliance criteria.",
+
+      "card3_title": "Control and Traceability",
+
+      "card3_text": "We ensure monitoring of raw materials to guarantee their conformity and traceability.",
+
+      "card4_title": "Storage",
+
+      "card4_text": "Raw materials are stored under appropriate conditions to preserve their quality.",
+
+      "card5_title": "Packaging",
+
+      "card5_text": "We ensure suitable packaging to facilitate the preservation, transportation and handling of raw materials.",
+
+      "card6_title": "Supply and Distribution",
+
+      "card6_text": "We ensure the supply and distribution of raw materials to our various partners and customers.",
+
+      "gallery_title": "Gallery",
+
+      "gallery_subtitle": "Discover our raw materials activity through images."
+    },
+    "terroir": {
+      "hero_title": "Traditional Algerian Products",
+
+      "hero_text": "Discover a selection of authentic Algerian traditional products, carefully selected to preserve the richness and flavors of our heritage.",
+
+      "about_title": "Our Traditional Products",
+
+      "about_subtitle": "We promote products rooted in Algerian know-how and heritage, with a strong focus on quality, authenticity and careful selection.",
+
+      "card1_title": "Authenticity",
+
+      "card1_text": "We offer authentic products that reflect the richness and know-how of the Algerian terroir.",
+
+      "card2_title": "Quality Selection",
+
+      "card2_text": "Our products are carefully selected to ensure quality that meets our customers' expectations.",
+
+      "card3_title": "Traditional Know-How",
+
+      "card3_text": "We promote the traditional methods and know-how that characterize Algerian traditional products.",
+
+      "card4_title": "Algerian Origin",
+
+      "card4_text": "We highlight products from different regions of Algeria and their natural richness.",
+
+      "card5_title": "Packaging",
+
+      "card5_text": "Our products are carefully packaged to preserve their quality, freshness and characteristics.",
+
+      "card6_title": "Distribution",
+
+      "card6_text": "We ensure the availability and distribution of our products to our various partners and customers.",
+
+      "gallery_title": "Gallery",
+
+      "gallery_subtitle": "Discover our selection of Algerian traditional products through images."
+    },
+    "manufactures": {
+      "hero_title": "Manufactured Products",
+
+      "hero_text": "Discover our range of manufactured products, carefully selected and developed to meet quality requirements and the needs of our customers.",
+
+      "about_title": "Our Manufactured Products Activity",
+
+      "about_subtitle": "We offer a range of manufactured products resulting from different processing operations, with particular attention to quality, packaging and compliance.",
+
+      "card1_title": "Product Quality",
+
+      "card1_text": "We pay particular attention to the quality of our manufactured products in order to meet our customers' requirements.",
+
+      "card2_title": "Careful Selection",
+
+      "card2_text": "Our products are selected according to precise criteria of quality, compliance and reliability.",
+
+      "card3_title": "Processing",
+
+      "card3_text": "We add value to raw materials through different processing operations adapted to the products.",
+
+      "card4_title": "Quality Control",
+
+      "card4_text": "We monitor the different stages to ensure the conformity and quality of finished products.",
+
+      "card5_title": "Packaging",
+
+      "card5_text": "Our products are carefully packaged to preserve their quality and facilitate storage and transportation.",
+
+      "card6_title": "Distribution",
+
+      "card6_text": "We ensure the availability and distribution of our products to our various partners and customers.",
+
+      "gallery_title": "Gallery",
+
+      "gallery_subtitle": "Discover our range of manufactured products through images."
+    }
+  }
+}

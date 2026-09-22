@@ -1,139 +1,296 @@
 import { Component } from "react";
-import { Star, Box ,Truck, Award, Sun, CheckCircle } from "lucide-react";
+import { withTranslation } from "react-i18next";
+import {
+    Box,
+    Star,
+    Award,
+    Package,
+    Truck,
+    Leaf
+} from "lucide-react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/pagination";
+import "../../Huile.css";
+
 
 class Huile extends Component {
     render() {
+        const { t } = this.props;
+
+        const galleryImages = [
+            "NEXOVA-huile-1.jpg",
+            "NEXOVA-huile-2.jpg",
+            "NEXOVA-huile-3.jpg",
+            "NEXOVA-huile-4.jpg",
+            "NEXOVA-huile-5.jpg",
+            "NEXOVA-huile-6.jpg"
+        ];
+
         return (
-            <div>
-                {/* === HERO SECTION === */}
-                <section className="service-hero">
-                    <video autoPlay muted loop className="service-video">
-                        <source src="/videos/Huile_oil.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+            <div className="nx-product-page">
 
-                    <div className="overlay"></div>
+                {/* ==================== HERO ==================== */}
 
-                    <div className="service-hero-content">
-                        <h1>Huile d’Olive</h1>
+                <section className="nx-service-hero nx-huile-hero">
+
+                    <div className="nx-service-hero-content">
+
+                        <h1>
+                            {t("products.huile.hero_title")}
+                        </h1>
+
                         <p>
-                            Huile d’olive extra-vierge 100% algérienne, contrôlée et conditionnée pour l’exportation.
+                            {t("products.huile.hero_text")}
                         </p>
-                        <a
-                            href="tel:+213779722300"
-                            className="btn neon-btn px-4 py-2 fw-semibold"
-                        >
-                            Appeler maintenant
-                        </a>
+
                     </div>
+
                 </section>
 
-                <br />
-                <br />
-                <br />
 
-                {/* === ABOUT HUILE SECTION === */}
-                <section className="about-emergency">
+                {/* ==================== À PROPOS ==================== */}
+
+                <section className="nx-about-section">
+
                     <div className="container">
-                        <h2 className="about-title">Pourquoi notre Huile d’Olive ?</h2>
-                        <p className="about-subtitle">
-                            Huile d’olive extra-vierge 100% algérienne, naturelle et de qualité.
+
+                        <h2 className="nx-section-title">
+                            {t("products.huile.about_title")}
+                        </h2>
+
+                        <p className="nx-section-subtitle">
+                            {t("products.huile.about_subtitle")}
                         </p>
-                        <div className="radiology-grid">
-                            <div className="radiology-card">
-                                <Star className="radiology-icon" size={48} color="#FFD700" />
-                                <h3>Qualité Premium</h3>
-                                <p>Extra-vierge, pressée à froid, goût riche et fruité.</p>
+
+
+                        <div className="nx-feature-grid">
+
+
+                            {/* ==================== CARTE 1 ==================== */}
+
+                            <div className="nx-feature-card">
+
+                                <Leaf
+                                    className="nx-feature-card-icon"
+                                    size={40}
+                                    color="#4CAF50"
+                                />
+
+                                <h3>
+                                    {t("products.huile.card1_title")}
+                                </h3>
+
+                                <p>
+                                    {t("products.huile.card1_text")}
+                                </p>
+
                             </div>
 
-                            <div className="radiology-card">
-                                <Sun className="radiology-icon" size={48} color="#228B22" />
-                                <h3>Naturelle</h3>
-                                <p>Huile pure, sans additifs, conservant toutes les propriétés des olives.</p>
+
+                            {/* ==================== CARTE 2 ==================== */}
+
+                            <div className="nx-feature-card">
+
+                                <Star
+                                    className="nx-feature-card-icon"
+                                    size={40}
+                                    color="#FFC107"
+                                />
+
+                                <h3>
+                                    {t("products.huile.card2_title")}
+                                </h3>
+
+                                <p>
+                                    {t("products.huile.card2_text")}
+                                </p>
+
                             </div>
 
-                            <div className="radiology-card">
-                                <CheckCircle className="radiology-icon" size={48} color="#1E90FF" />
-                                <h3>Riche en Nutriments</h3>
-                                <p>Source naturelle d'antioxydants et d'acides gras bons pour la santé.</p>
+
+                            {/* ==================== CARTE 3 ==================== */}
+
+                            <div className="nx-feature-card">
+
+                                <Award
+                                    className="nx-feature-card-icon"
+                                    size={40}
+                                    color="#8BC34A"
+                                />
+
+                                <h3>
+                                    {t("products.huile.card3_title")}
+                                </h3>
+
+                                <p>
+                                    {t("products.huile.card3_text")}
+                                </p>
+
                             </div>
 
-                            <div className="radiology-card">
-                                <Box className="radiology-icon" size={48} color="#FF4500" />
-                                <h3>Conditionnement</h3>
-                                <p>Flacons et bouteilles soigneusement fermés pour préserver la qualité.</p>
+
+                            {/* ==================== CARTE 4 ==================== */}
+
+                            <div className="nx-feature-card">
+
+                                <Box
+                                    className="nx-feature-card-icon"
+                                    size={40}
+                                    color="#3F51B5"
+                                />
+
+                                <h3>
+                                    {t("products.huile.card4_title")}
+                                </h3>
+
+                                <p>
+                                    {t("products.huile.card4_text")}
+                                </p>
+
                             </div>
 
-                            <div className="radiology-card">
-                                <Truck className="radiology-icon" size={48} color="#8A2BE2" />
-                                <h3>Livraison Sécurisée</h3>
-                                <p>Transport fiable pour garantir une huile intacte jusqu’à votre porte.</p>
+
+                            {/* ==================== CARTE 5 ==================== */}
+
+                            <div className="nx-feature-card">
+
+                                <Package
+                                    className="nx-feature-card-icon"
+                                    size={40}
+                                    color="#9C27B0"
+                                />
+
+                                <h3>
+                                    {t("products.huile.card5_title")}
+                                </h3>
+
+                                <p>
+                                    {t("products.huile.card5_text")}
+                                </p>
+
                             </div>
 
-                            <div className="radiology-card">
-                                <Award className="radiology-icon" size={48} color="#FF8C00" />
-                                <h3>Certification</h3>
-                                <p>Huile contrôlée et certifiée pour l’exportation internationale.</p>
+
+                            {/* ==================== CARTE 6 ==================== */}
+
+                            <div className="nx-feature-card">
+
+                                <Truck
+                                    className="nx-feature-card-icon"
+                                    size={40}
+                                    color="#c96a3d"
+                                />
+
+                                <h3>
+                                    {t("products.huile.card6_title")}
+                                </h3>
+
+                                <p>
+                                    {t("products.huile.card6_text")}
+                                </p>
+
                             </div>
+
                         </div>
+
                     </div>
+
                 </section>
 
-                <br />
-                <br />
-                <br />
-                <br />
 
+                {/* ==================== GALERIE ==================== */}
 
-                {/* === GALLERY SECTION === */}
-                <section className="radiology-department py-12 bg-gray-50">
-                    <div className="container mx-auto px-4">
-                        <h2 className="about-title text-center mb-6">Galerie de notre huile</h2>
-                        <p className="about-subtitle text-center mb-10">
-                            Découvrez nos produits et leur qualité exceptionnelle.
+                <section className="nx-gallery-section">
+
+                    <div className="container">
+
+                        <h2 className="nx-section-title nx-text-center">
+                            {t("products.huile.gallery_title")}
+                        </h2>
+
+                        <p className="nx-section-subtitle nx-text-center">
+                            {t("products.huile.gallery_subtitle")}
                         </p>
+
 
                         <Swiper
                             dir="ltr"
+
                             spaceBetween={20}
-                            autoplay={{ delay: 3000, disableOnInteraction: false }}
-                            pagination={{ clickable: true }}
-                            breakpoints={{
-                                640: { slidesPerView: 1 },
-                                768: { slidesPerView: 2 },
-                                1024: { slidesPerView: 3 },
+
+                            autoplay={{
+                                delay: 2500,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
                             }}
+
+                            pagination={{
+                                clickable: true,
+                            }}
+
+                            breakpoints={{
+
+                                320: {
+                                    slidesPerView: 1,
+                                },
+
+                                640: {
+                                    slidesPerView: 1,
+                                },
+
+                                768: {
+                                    slidesPerView: 2,
+                                },
+
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+
+                                1400: {
+                                    slidesPerView: 4,
+                                },
+
+                            }}
+
                             modules={[Autoplay, Pagination]}
-                            className="mySwiper"
+
+                            className="nx-swiper"
                         >
-                            {["TIGANA17.jpg", "TIGANA20.jpg", "TIAGANA41.jpg", "TIAGANA44.jpg"].map(
-                                (img, idx) => (
-                                    <SwiperSlide key={idx}>
-                                        <div className="card shadow-sm border-0 rounded-3">
-                                            <img
-                                                src={`/images/${img}`}
-                                                alt={`Huile d’Olive ${idx + 1}`}
-                                                className="card-img-top img-fluid w-100"
-                                                style={{ height: "300px", objectFit: "cover" }}
-                                            />
-                                        </div>
-                                    </SwiperSlide>
-                                )
-                            )}
+
+                            {galleryImages.map((img, idx) => (
+
+                                <SwiperSlide key={idx}>
+
+                                    <div className="nx-gallery-card">
+
+                                        <img
+                                            src={`../../images/${img}`}
+                                            alt={`${t(
+                                                "products.huile.hero_title"
+                                            )} ${idx + 1}`}
+                                            className="nx-gallery-img"
+                                        />
+
+                                    </div>
+
+                                </SwiperSlide>
+
+                            ))}
+
                         </Swiper>
+
                     </div>
+
                 </section>
 
-                <br />
-                <br />
-                <br />
             </div>
         );
     }
 }
 
-export default Huile;
+
+export default withTranslation()(Huile);

@@ -1,0 +1,283 @@
+/* ============ Nexova Trade — Home ============ */
+:root {
+  --nx-dark: #14322c;
+  --nx-dark-2: #1c463d;
+  --nx-orange: #c96a3d;
+  --nx-orange-dark: #b25a30;
+  --nx-cream: #f7f5f0;
+  --nx-text: #22302c;
+  --nx-muted: #667370;
+  --nx-white: #ffffff;
+  --nx-radius: 10px;
+}
+
+.nx-page {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: var(--nx-text);
+}
+
+.nx-btn {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.nx-btn:hover { opacity: 0.9; }
+.nx-btn-primary { background: var(--nx-orange); color: var(--nx-white); }
+.nx-btn-outline { background: transparent; color: var(--nx-dark); border: 1.5px solid var(--nx-dark); }
+.nx-btn-dark { background: var(--nx-dark); color: var(--nx-white); margin-top: 1.5rem; }
+
+/* ===== HERO ===== */
+.nx-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 4rem 6vw;
+  background: var(--nx-cream);
+}
+.nx-hero-eyebrow {
+  color: var(--nx-orange);
+  font-weight: 600;
+  border-left: 3px solid var(--nx-orange);
+  padding-left: 0.8rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+}
+.nx-hero-title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--nx-dark);
+  line-height: 1.15;
+  margin: 0 0 1.2rem;
+}
+.nx-hero-text {
+  color: var(--nx-muted);
+  max-width: 46ch;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+.nx-hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.nx-hero-right { position: relative; }
+.nx-hero-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: var(--nx-radius);
+}
+.nx-hero-badge {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: rgba(20, 50, 44, 0.85);
+  color: var(--nx-white);
+  padding: 0.8rem 1.1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  text-align: right;
+}
+.nx-hero-badge strong { font-size: 1.05rem; margin-top: 2px; }
+.nx-hero-caption {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  color: var(--nx-white);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+  font-weight: 600;
+  text-align: right;
+}
+
+/* ===== ATOUTS ===== */
+.nx-features {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+  padding: 3rem 6vw;
+  background: var(--nx-white);
+  border-bottom: 1px solid #ece9e2;
+}
+.nx-feature { display: flex; gap: 0.8rem; align-items: flex-start; }
+.nx-feature-icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f1ece3;
+  color: var(--nx-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nx-feature-icon svg { width: 20px; height: 20px; }
+.nx-feature h3 { font-size: 0.95rem; margin: 0 0 0.3rem; color: var(--nx-dark); }
+.nx-feature p { font-size: 0.82rem; color: var(--nx-muted); margin: 0; line-height: 1.4; }
+
+/* ===== PRODUITS ===== */
+.nx-products { padding: 3.5rem 6vw; background: var(--nx-cream); }
+.nx-products-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.8rem;
+}
+.nx-products-head h2 { color: var(--nx-dark); font-size: 1.6rem; margin: 0; }
+.nx-products-head a { color: var(--nx-orange); font-weight: 600; text-decoration: none; }
+.nx-products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+}
+.nx-product-card {
+  background: var(--nx-white);
+  border-radius: var(--nx-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.nx-product-card img { width: 100%; height: 120px; object-fit: cover; }
+.nx-product-card h3 { font-size: 0.95rem; margin: 0.8rem 0.9rem 0.2rem; color: var(--nx-dark); }
+.nx-product-card p { font-size: 0.8rem; color: var(--nx-muted); margin: 0 0.9rem 0.9rem; }
+
+/* ===== STATS ===== */
+.nx-stats {
+  background: linear-gradient(120deg, var(--nx-dark), var(--nx-dark-2));
+  color: var(--nx-white);
+  padding: 2.5rem 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.nx-stats-grid { display: flex; gap: 2.5rem; flex-wrap: wrap; }
+.nx-stat { display: flex; align-items: center; gap: 0.7rem; }
+.nx-stat-icon { font-size: 1.4rem; }
+.nx-stat strong { display: block; font-size: 1.3rem; }
+.nx-stat p { margin: 0; font-size: 0.82rem; opacity: 0.85; }
+.nx-stats-caption {
+  font-style: italic;
+  text-align: right;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* ===== À PROPOS ===== */
+.nx-about {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  padding: 4rem 6vw;
+  background: var(--nx-white);
+  align-items: start;
+}
+.nx-about-eyebrow { color: var(--nx-orange); font-weight: 600; margin-bottom: 0.3rem; }
+.nx-about-text h2 { color: var(--nx-dark); font-size: 1.9rem; margin: 0 0 1rem; }
+.nx-about-text > p { color: var(--nx-muted); line-height: 1.6; margin-bottom: 1.5rem; }
+.nx-about-item { display: flex; gap: 0.9rem; margin-bottom: 1.2rem; }
+.nx-about-item span {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f1ece3;
+  color: var(--nx-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nx-about-item h4 { margin: 0 0 0.2rem; color: var(--nx-dark); font-size: 1rem; }
+.nx-about-item p { margin: 0; color: var(--nx-muted); font-size: 0.88rem; line-height: 1.5; }
+
+.nx-about-map { position: relative; text-align: center; }
+.nx-about-map img { width: 100%; max-width: 380px; opacity: 0.9; }
+.nx-about-map p {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: var(--nx-orange);
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* ===== CONTACT ===== */
+.nx-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  padding: 4rem 6vw;
+  background: var(--nx-cream);
+  align-items: center;
+}
+.nx-contact-left h2 { color: var(--nx-dark); margin-bottom: 1.2rem; }
+.nx-contact-form { display: flex; flex-direction: column; gap: 0.9rem; }
+.nx-contact-form input,
+.nx-contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd6c8;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+.nx-contact-form textarea { min-height: 120px; resize: vertical; }
+.nx-contact-form button {
+  align-self: flex-start;
+  background: var(--nx-orange);
+  color: var(--nx-white);
+  border: none;
+  padding: 0.85rem 1.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.nx-contact-right img { width: 100%; border-radius: var(--nx-radius); }
+
+.nx-alert {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nx-alert.success { border-color: #2e7d32; }
+.nx-alert.error { border-color: #c62828; }
+
+.nx-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.nx-modal {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 320px;
+}
+.nx-modal button {
+  margin-top: 1rem;
+  background: var(--nx-dark);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .nx-hero, .nx-about, .nx-contact { grid-template-columns: 1fr; }
+  .nx-features { grid-template-columns: repeat(2, 1fr); }
+  .nx-products-grid { grid-template-columns: repeat(2, 1fr); }
+  .nx-stats { flex-direction: column; align-items: flex-start; }
+  .nx-stats-caption { text-align: left; }
+}

@@ -1,0 +1,407 @@
+/* =========================================================
+   PAGE MATIÈRE PREMIÈRE
+========================================================= */
+
+.nx-product-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.nx-matiere-premiere-hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            #3e2723 0%,
+            #5d4037 35%,
+            #795548 70%,
+            #8d6e63 100%
+        );
+
+    position: relative;
+
+    min-height: 420px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+
+.nx-matiere-premiere-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    top: -150px;
+
+    left: -100px;
+
+}
+
+
+.nx-matiere-premiere-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    bottom: -220px;
+
+    right: -150px;
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.nx-service-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 850px;
+
+    padding: 40px 20px;
+
+    color: white;
+}
+
+
+.nx-service-hero-content h1 {
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    line-height: 1.2;
+}
+
+
+.nx-service-hero-content p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin: 0 auto;
+
+    max-width: 750px;
+
+    opacity: 0.95;
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.nx-about-section {
+
+    padding: 80px 20px;
+
+    background: #ffffff;
+}
+
+
+.nx-section-title {
+
+    text-align: center;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+.nx-section-subtitle {
+
+    max-width: 850px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FEATURE GRID
+========================================================= */
+
+.nx-feature-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+.nx-feature-card {
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.nx-feature-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.nx-feature-card-icon {
+
+    margin-bottom: 18px;
+}
+
+
+.nx-feature-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+
+    color: #333;
+}
+
+
+.nx-feature-card p {
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #666;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.nx-gallery-section {
+
+    padding: 80px 20px;
+
+    background: #f7f7f7;
+}
+
+
+.nx-text-center {
+
+    text-align: center;
+}
+
+
+.nx-swiper {
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 10px 5px 45px;
+}
+
+
+.nx-gallery-card {
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    height: 280px;
+}
+
+
+.nx-gallery-img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+
+.nx-gallery-card:hover .nx-gallery-img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   SWIPER PAGINATION
+========================================================= */
+
+.nx-swiper .swiper-pagination {
+
+    bottom: 5px;
+}
+
+
+.nx-swiper .swiper-pagination-bullet {
+
+    opacity: 0.5;
+}
+
+
+.nx-swiper .swiper-pagination-bullet-active {
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nx-feature-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .nx-service-hero-content h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .nx-service-hero-content p {
+
+        font-size: 16px;
+
+    }
+
+
+    .nx-feature-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .nx-about-section,
+    .nx-gallery-section {
+
+        padding: 60px 15px;
+
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .nx-service-hero {
+
+        min-height: 360px;
+
+    }
+
+
+    .nx-service-hero-content h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .nx-section-title {
+
+        font-size: 28px;
+
+    }
+
+
+    .nx-gallery-card {
+
+        height: 240px;
+
+    }
+
+}

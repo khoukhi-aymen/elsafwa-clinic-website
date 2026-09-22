@@ -1,0 +1,569 @@
+/* ==========================================================
+   Services page — Nexova Trade
+   Palette : vert pétrole #16332e, orange terracotta #c1642f,
+   fond crème #f7f5f0, blanc #ffffff
+   ========================================================== */
+
+.nx-services-page {
+    padding-top: 90px; /* hauteur de la navbar fixe */
+    color: #16332e;
+    font-family: inherit;
+}
+
+.nx-services-page h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin: 0 0 16px;
+    color: #16332e;
+}
+
+/* ---------- Hero (image de fond) ---------- */
+.nx-services-hero {
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #16332e; /* couleur de repli si l'image ne charge pas */
+}
+
+.nx-services-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(22, 51, 46, 0.75) 0%,
+        rgba(22, 51, 46, 0.55) 50%,
+        rgba(22, 51, 46, 0.85) 100%
+    );
+}
+
+.nx-services-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.nx-services-hero-eyebrow {
+    color: #f0a374;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px;
+}
+
+.nx-services-hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin: 0 0 18px;
+    color: #ffffff;
+}
+
+.nx-services-hero-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #e4ece9;
+    margin: 0 0 28px;
+}
+
+.nx-services-hero-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nx-services-hero-actions .nx-btn-primary {
+    background: #c1642f;
+    color: #ffffff;
+    border: none;
+    padding: 13px 26px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.nx-services-hero-actions .nx-btn-primary:hover {
+    background: #a8531f;
+}
+
+.nx-btn-outline-light {
+    padding: 13px 26px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    background: transparent;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.nx-btn-outline-light:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/* ---------- Notre approche ---------- */
+.nx-services-approach {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 8px;
+    text-align: center;
+}
+
+.nx-services-approach p {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #3f5651;
+    margin: 0 0 16px;
+}
+
+/* ---------- Grille des services ---------- */
+.nx-services-grid-section {
+    background: #f7f5f0;
+    padding: 48px 24px 64px;
+    margin-top: 40px;
+}
+
+.nx-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1180px;
+    margin: 36px auto 0;
+}
+
+.nx-service-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 28px 24px;
+    box-shadow: 0 2px 10px rgba(22, 51, 46, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nx-service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(22, 51, 46, 0.1);
+}
+
+.nx-service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(193, 100, 47, 0.1);
+    color: #c1642f;
+    margin-bottom: 16px;
+}
+
+.nx-service-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.nx-service-card h3 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    color: #16332e;
+}
+
+.nx-service-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #4b6a63;
+    margin: 0 0 14px;
+}
+
+.nx-service-points {
+    list-style: none;
+    margin: 0;
+    padding: 14px 0 0;
+    border-top: 1px solid rgba(22, 51, 46, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nx-service-points li {
+    font-size: 0.88rem;
+    line-height: 1.4;
+    color: #3f5651;
+    padding-left: 18px;
+    position: relative;
+}
+
+.nx-service-points li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #c1642f;
+}
+
+/* ---------- Pourquoi nous choisir ---------- */
+.nx-services-why {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+.nx-why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 36px;
+}
+
+.nx-why-item {
+    text-align: center;
+    padding: 8px 12px;
+}
+
+.nx-why-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(22, 51, 46, 0.06);
+    color: #16332e;
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.nx-why-item h4 {
+    font-size: 1.02rem;
+    margin: 0 0 8px;
+    color: #16332e;
+}
+
+.nx-why-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #4b6a63;
+    margin: 0;
+}
+
+/* ---------- Secteurs desservis ---------- */
+.nx-services-sectors {
+    background: #f7f5f0;
+    padding: 64px 24px;
+}
+
+.nx-services-sectors-text {
+    text-align: center;
+    color: #4b6a63;
+    margin: 0 0 32px;
+}
+
+.nx-sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.nx-sector-chip {
+    position: relative;
+    height: 140px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.nx-sector-chip::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(22, 51, 46, 0) 40%, rgba(22, 51, 46, 0.85) 100%);
+}
+
+.nx-sector-chip span {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 12px;
+    line-height: 1.25;
+}
+
+/* ---------- Notre méthode ---------- */
+.nx-services-process {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+.nx-process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 36px;
+}
+
+.nx-process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(22, 51, 46, 0.1);
+}
+
+.nx-process-step:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.nx-process-number {
+    flex: 0 0 auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #c1642f;
+    min-width: 46px;
+}
+
+.nx-process-step h4 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+    color: #16332e;
+}
+
+.nx-process-step p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #4b6a63;
+}
+
+/* ---------- FAQ ---------- */
+.nx-services-faq {
+    background: #f7f5f0;
+    padding: 64px 24px;
+}
+
+.nx-faq-list {
+    max-width: 780px;
+    margin: 36px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nx-faq-item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(22, 51, 46, 0.05);
+}
+
+.nx-faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #16332e;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nx-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.nx-faq-item summary::after {
+    content: "+";
+    font-size: 1.3rem;
+    color: #c1642f;
+    margin-left: 12px;
+    flex-shrink: 0;
+}
+
+.nx-faq-item[open] summary::after {
+    content: "–";
+}
+
+.nx-faq-item p {
+    margin: 12px 0 0;
+    font-size: 0.94rem;
+    line-height: 1.55;
+    color: #4b6a63;
+}
+
+/* ---------- Appel à l'action (image de fond) ---------- */
+.nx-services-cta {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: #16332e;
+    padding: 64px 24px;
+}
+
+.nx-services-cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(22, 51, 46, 0.88);
+}
+
+.nx-services-cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.nx-services-cta-content h2 {
+    font-size: 1.6rem;
+    margin: 0 0 8px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.nx-services-cta-content p {
+    margin: 0;
+    color: #cfded9;
+    font-size: 0.98rem;
+}
+
+.nx-services-cta-content .nx-btn-primary {
+    background: #c1642f;
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s ease;
+}
+
+.nx-services-cta-content .nx-btn-primary:hover {
+    background: #a8531f;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+    .nx-services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nx-why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nx-sectors-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .nx-services-hero h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .nx-services-page {
+        padding-top: 76px;
+    }
+
+    .nx-services-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .nx-services-hero {
+        min-height: 380px;
+    }
+
+    .nx-services-hero-content {
+        padding: 48px 20px;
+    }
+
+    .nx-services-hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .nx-services-hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .nx-services-grid,
+    .nx-why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nx-sectors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nx-services-grid-section,
+    .nx-services-approach,
+    .nx-services-why,
+    .nx-services-sectors,
+    .nx-services-process,
+    .nx-services-faq {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nx-services-cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nx-services-cta-content h2 {
+        text-align: center;
+    }
+
+    .nx-process-step {
+        gap: 14px;
+    }
+
+    .nx-process-number {
+        min-width: 36px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ---------- Support RTL (arabe) ---------- */
+html[dir="rtl"] .nx-process-step,
+html[dir="rtl"] .nx-service-points li {
+    text-align: right;
+}
+
+html[dir="rtl"] .nx-service-points li {
+    padding-left: 0;
+    padding-right: 18px;
+}
+
+html[dir="rtl"] .nx-service-points li::before {
+    left: auto;
+    right: 0;
+}
+
+html[dir="rtl"] .nx-services-cta-content h2 {
+    text-align: right;
+}

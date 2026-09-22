@@ -1,0 +1,519 @@
+/* =========================================================
+   NEXOVA TRADE — PAGE PRODUITS MANUFACTURÉS
+========================================================= */
+
+.nx-product-page {
+
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+    color: var(--nx-text, #22302c);
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.nx-service-hero {
+
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO MANUFACTURÉS
+========================================================= */
+
+.nx-manufactures-hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            #123b4a 0%,
+            #18566a 35%,
+            #22758a 70%,
+            #3b9ab0 100%
+        );
+}
+
+
+/* =========================================================
+   CERCLES DÉCORATIFS
+========================================================= */
+
+.nx-manufactures-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 550px;
+
+    height: 550px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.055);
+
+    top: -280px;
+
+    right: -130px;
+}
+
+
+.nx-manufactures-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    bottom: -230px;
+
+    left: -120px;
+}
+
+
+/* =========================================================
+   CONTENU HERO
+========================================================= */
+
+.nx-service-hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 950px;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+
+.nx-service-hero-content h1 {
+
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    margin: 0 0 1.4rem;
+
+    text-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.nx-service-hero-content p {
+
+    font-size: clamp(1rem, 2vw, 1.25rem);
+
+    line-height: 1.8;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.95);
+}
+
+
+/* =========================================================
+   À PROPOS
+========================================================= */
+
+.nx-about-section {
+
+    padding: 5rem 6vw;
+
+    background: var(--nx-cream, #f7f5f0);
+}
+
+
+.nx-section-title {
+
+    color: var(--nx-dark, #14322c);
+
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    margin: 0 0 0.7rem;
+
+    text-align: center;
+}
+
+
+.nx-section-subtitle {
+
+    color: var(--nx-muted, #667370);
+
+    max-width: 700px;
+
+    line-height: 1.7;
+
+    font-size: 1rem;
+
+    margin: 0 auto 2.8rem;
+
+    text-align: center;
+}
+
+
+.nx-text-center {
+
+    text-align: center;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   CARTES
+========================================================= */
+
+.nx-feature-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.6rem;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+}
+
+
+.nx-feature-card {
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    padding: 2rem 1.5rem;
+
+    min-height: 220px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid rgba(20, 50, 44, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.nx-feature-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+.nx-feature-card-icon {
+
+    margin-bottom: 1rem;
+}
+
+
+.nx-feature-card h3 {
+
+    color: var(--nx-dark, #14322c);
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    margin: 0 0 0.7rem;
+}
+
+
+.nx-feature-card p {
+
+    color: var(--nx-muted, #667370);
+
+    font-size: 0.92rem;
+
+    line-height: 1.65;
+
+    margin: 0;
+
+    max-width: 300px;
+}
+
+
+/* =========================================================
+   GALERIE
+========================================================= */
+
+.nx-gallery-section {
+
+    padding: 5rem 6vw 6rem;
+
+    background: #ffffff;
+}
+
+
+.nx-swiper {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 10px 5px 50px !important;
+}
+
+
+.nx-gallery-card {
+
+    width: 100%;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.nx-gallery-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.13);
+}
+
+
+.nx-gallery-img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.nx-gallery-card:hover .nx-gallery-img {
+
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   PAGINATION
+========================================================= */
+
+.nx-swiper .swiper-pagination {
+
+    bottom: 8px !important;
+}
+
+
+.nx-swiper .swiper-pagination-bullet {
+
+    width: 9px;
+
+    height: 9px;
+
+    opacity: 0.5;
+
+    background: #22758a;
+}
+
+
+.nx-swiper .swiper-pagination-bullet-active {
+
+    background: #22758a;
+
+    opacity: 1;
+
+    transform: scale(1.25);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nx-service-hero {
+
+        min-height: 450px;
+    }
+
+    .nx-feature-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1.4rem;
+    }
+
+    .nx-gallery-img {
+
+        height: 280px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .nx-service-hero {
+
+        min-height: 420px;
+    }
+
+    .nx-service-hero-content {
+
+        padding: 45px 25px;
+    }
+
+    .nx-service-hero-content h1 {
+
+        font-size: 2.5rem;
+    }
+
+    .nx-service-hero-content p {
+
+        font-size: 1.05rem;
+    }
+
+    .nx-about-section {
+
+        padding: 4rem 5vw;
+    }
+
+    .nx-gallery-section {
+
+        padding: 4rem 5vw 5rem;
+    }
+
+    .nx-gallery-img {
+
+        height: 280px;
+    }
+
+}
+
+
+@media (max-width: 560px) {
+
+    .nx-service-hero {
+
+        min-height: 380px;
+    }
+
+    .nx-service-hero-content {
+
+        padding: 40px 20px;
+    }
+
+    .nx-service-hero-content h1 {
+
+        font-size: 2.1rem;
+    }
+
+    .nx-service-hero-content p {
+
+        font-size: 0.98rem;
+    }
+
+    .nx-feature-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.2rem;
+    }
+
+    .nx-feature-card {
+
+        min-height: auto;
+
+        padding: 1.8rem 1.3rem;
+    }
+
+    .nx-gallery-img {
+
+        height: 230px;
+    }
+
+    .nx-gallery-section {
+
+        padding-left: 4vw;
+
+        padding-right: 4vw;
+    }
+
+    .nx-about-section {
+
+        padding-left: 4vw;
+
+        padding-right: 4vw;
+    }
+
+}
